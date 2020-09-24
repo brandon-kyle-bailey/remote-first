@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 
-function Test() {
+export const Test = () => {
     const [data, setData] = useState({});
     const [count, setCount] = useState(0);
 

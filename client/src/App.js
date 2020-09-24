@@ -1,16 +1,16 @@
 import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Test from './components/test.component';
-import JobForm from './components/job-form.component';
 
+import { SiteRouter } from './components/router.component';
+
+import { GlobalProvider } from './context/global-state.context';
+
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Test />
-      <JobForm/>
-    </div>
+    <GlobalProvider>
+      <SiteRouter />
+    </GlobalProvider>
   );
 }
 
