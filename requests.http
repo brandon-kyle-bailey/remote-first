@@ -1,0 +1,24 @@
+GET http://localhost:8080/api/v1/dev/alive HTTP/1.1
+
+###
+
+GET http://localhost:8080/api/v1/jobs/all HTTP/1.1
+
+###
+
+POST http://localhost:8080/api/v1/jobs/create HTTP/1.1
+content-type: application/json
+
+{
+        "position": "Senior Full Stack Developer",
+        "company": "Framestore",
+        "location": "London",
+        "salary": 10000
+}
+
+###
+
+PUT http://localhost:8080/api/v1/jobs/update/100 HTTP/1.1
+
+
+###

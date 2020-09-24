@@ -19,7 +19,8 @@ db.mongoose.connect(
 const router = require('./api/routes/router.routes');
 
 const app = express();
-app.use('/api', router);
+app.use(express.json())
+app.use('/api/v1', router);
 
 
 const PORT = process.env.PORT || 8080;

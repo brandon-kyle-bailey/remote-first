@@ -7,12 +7,9 @@ module.exports = mongoose => {
         mongoose.Schema(
             {
                 position: {type: String, required:true},
-                primaryTag: {type: String, required:true},
                 company: {type: String, required:true},
                 location: {type: String, required:true},
-                salary: {type: String, required:true},
-                description: {type: String, required:true},
-                url: {type: String, required:true}
+                salary: {type: Number, required:true}
             },
             {timestamps: true}
         ));
