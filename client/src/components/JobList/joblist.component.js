@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 import useStyles from './joblist.styles';
 
@@ -15,7 +16,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -24,7 +26,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -33,7 +36,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -42,7 +46,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -51,7 +56,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -60,7 +66,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -69,7 +76,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -78,7 +86,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -87,7 +96,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -96,7 +106,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -105,7 +116,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -114,7 +126,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -123,7 +136,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -132,7 +146,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -141,7 +156,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -150,7 +166,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -159,7 +176,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -168,7 +186,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -177,7 +196,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -186,7 +206,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -195,7 +216,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg?img=1',
@@ -204,7 +226,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -213,7 +236,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
   {
     imgUrl: 'https://transcosmos.co.uk/wp-content/uploads/2015/09/google_logo_03-818x600.jpg',
@@ -222,7 +246,8 @@ const jobs = [
     description: 'Ex eiusmod veniam nisi ut commodo sint aliquip mollit aliqua. Tempor nisi cupidatat reprehenderit enim quis irure ea irure quis enim consequat. Quis qui amet labore in reprehenderit. Occaecat ad velit voluptate aliquip sunt ex mollit. Esse id exercitation nostrud commodo incididunt nulla elit eu pariatur in. Adipisicing qui irure officia do esse. Proident occaecat sint commodo officia id id do laborum adipisicing duis sit. ',
     salary: 75000,
     tags: ['software', 'remote', 'python', 'google', 'web'],
-    location: 'remote'
+    location: 'remote',
+    creationTime: '2020-09-26 00:00:00'
   },
 ];
 
@@ -232,12 +257,15 @@ function JobList() {
 
   return(
         <Container maxWidth="lg" component="main">
-        <JobSearchBar />
-        <Grid container spacing={5} direction="column">
-          {
-          jobs.map((job, index) => (<Job key={index} job={job} />))
-          }
-        </Grid>
+          <JobSearchBar />
+          <Typography component="h2" variant="h4" color="textPrimary" gutterBottom="1">
+            Today's Remote Jobs
+          </Typography>
+          <Grid container spacing={5} direction="column">
+            {
+            jobs.map((job, index) => (<Job key={index} job={job} />))
+            }
+          </Grid>
       </Container>
     );
 }

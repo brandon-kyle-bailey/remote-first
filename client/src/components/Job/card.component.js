@@ -13,6 +13,7 @@ import useStyles from './job.styles';
 function CustomCard(props) {
     const job = props.job;
     const styles = useStyles();
+    const daysOld = Math.floor((new Date().getTime() - new Date(job.creationTime).getTime()) / (1000 * 3600 * 24));
 
     return(
         <Card className={styles.jobCard}>
@@ -51,6 +52,9 @@ function CustomCard(props) {
         </CardContent>
         <CardActions className={styles.jobApplyAction}>
             <div className={styles.jobApplyAction}>
+            <Typography component="p" variant="subtitle2" color="textPrimary" align="center" gutterBottom="1">
+                {daysOld}d Ago
+            </Typography>
             <Button fullWidth color="primary" size="large" variant="outlined">
                 Apply
             </Button>
