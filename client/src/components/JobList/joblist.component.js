@@ -13,7 +13,7 @@ import Job from '../Job/job.component';
 
 function JobList() {
   const styles = useStyles();
-  const { jobs, searchedJobs } = useContext(GlobalContext);
+  const { jobs } = useContext(GlobalContext);
 
   console.log(jobs);
 
