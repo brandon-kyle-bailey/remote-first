@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between',
         [theme.breakpoints.down('sm')]: {
           flexDirection: 'column',
-          justifyContent: 'center',
         },
       },
       jobCardBody: {
@@ -18,24 +17,27 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        [theme.breakpoints.down('sm')]: {
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+        },
       },
       descriptionAndSalary: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        flexGrow: 0,
-        flexShrink: 0,
-        flexBasis: '50%',
-        overflow: 'hidden',
-        // flex-grow: 0; flex-shrink: 0; flex-basis: 50%
+        justifyContent: 'stretch',
+        [theme.breakpoints.down('sm')]: {
+          flexDirection: 'column-reverse',
+          justifyContent: 'flex-start',
+        },
       },
       tagAndLocation: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        flexGrow: 1,
-        flexShrink: 1,
-        flexBasis: '50%',
+        justifyContent: 'stretch',
+        [theme.breakpoints.down('sm')]: {
+          flexDirection: 'column-reverse',
+        },
       },
       tagsList: {
         display: 'flex',
@@ -47,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
       },
       tagItem: {
         margin: '10px',
+        [theme.breakpoints.down('sm')]: {
+          margin: '5px',
+        },
       },
       jobApplyAction: {
         display: 'flex',
@@ -58,6 +63,17 @@ const useStyles = makeStyles((theme) => ({
       },
       link: {
         margin: theme.spacing(1, 1.5),
+      },
+      imageWrapper: {
+        width: '25%',
+        margin: 'auto',
+      },
+      image: {
+        display: 'block',
+        width: '100%',
+        maxWidth: '250px',
+        height: 'auto',
+        margin: 'auto',
       },
 }));
 

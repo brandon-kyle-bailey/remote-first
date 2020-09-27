@@ -16,13 +16,9 @@ function CustomCard(props) {
 
     return(
         <Card className={styles.jobCard}>
-            {/* <CardMedia
-                className={styles.media}
-                component="img" 
-                src={job.imgUrl}
-                title='description goes..'>
-                </CardMedia> */}
-            <img src={job.imgUrl} width="350px" height="175px"/>
+            <div className={styles.imageWrapper}>
+                <img src={job.imgUrl} className={styles.image}/>
+            </div>
         <CardContent className={styles.jobCardBody}>
             <div id="position_and_company" className={styles.positionAndCompany}>
                 <Typography component="h6" variant="h6" color="textPrimary">

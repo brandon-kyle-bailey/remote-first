@@ -26,9 +26,6 @@ export const NavigationBar = () => {
             </ul>
         </nav>
         <Switch>
-            {/* <Route path="/home" component={HomeTest}/>
-            <Route path="/jobs" component={JobsTest}/> */}
-            {/* <Route path="/" component={Home}/> */}
             <Route path="/home" component={Home}/>
             <Route path="/jobs" component={AddJob}/>
         </Switch>
