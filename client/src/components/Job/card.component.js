@@ -7,22 +7,24 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
+import useStyles from './job.styles';
 
-function customCard(props) {
-    const classes = props.classes;
+
+function CustomCard(props) {
     const job = props.job;
+    const styles = useStyles();
 
     return(
-        <Card className={classes.jobCard}>
+        <Card className={styles.jobCard}>
             {/* <CardMedia
-                className={classes.media}
+                className={styles.media}
                 component="img" 
                 src={job.imgUrl}
                 title='description goes..'>
                 </CardMedia> */}
             <img src={job.imgUrl} width="350px" height="175px"/>
-        <CardContent className={classes.jobCardBody}>
-            <div id="position_and_company" className={classes.positionAndCompany}>
+        <CardContent className={styles.jobCardBody}>
+            <div id="position_and_company" className={styles.positionAndCompany}>
                 <Typography component="h6" variant="h6" color="textPrimary">
                     {job.position}
                 </Typography>
@@ -30,7 +32,7 @@ function customCard(props) {
                     {job.company}
                 </Typography>
             </div>
-            <div id="desc_and_salary" className={classes.descriptionAndSalary}>
+            <div id="desc_and_salary" className={styles.descriptionAndSalary}>
                 <Typography component="p" color="textPrimary">
                     {job.description.substring(0, 200)}...
                 </Typography>
@@ -38,10 +40,10 @@ function customCard(props) {
                     ${job.salary}
                 </Typography>
             </div>
-            <div id="tag_and_location" className={classes.tagAndLocation}>
-                <Typography component="p" color="textPrimary" className={classes.tagsList}>
+            <div id="tag_and_location" className={styles.tagAndLocation}>
+                <Typography component="p" color="textPrimary" className={styles.tagsList}>
                 {job.tags.map((tag) => (
-                <Typography className={classes.tagItem} component="a" variant="subtitle1" align="center" key={tag}>
+                <Typography className={styles.tagItem} component="a" variant="subtitle1" align="center" key={tag}>
                   <Button size="small" variant="outlined" color="primary">{tag}</Button>
                 </Typography>
               ))}
@@ -51,12 +53,12 @@ function customCard(props) {
                 </Typography>
             </div>
         </CardContent>
-        <CardActions className={classes.jobApplyAction}>
-            <div className={classes.jobApplyAction}>
+        <CardActions className={styles.jobApplyAction}>
+            <div className={styles.jobApplyAction}>
             <Button fullWidth color="primary" size="large" variant="outlined">
                 Apply
             </Button>
-            <Link color="textPrimary" href="#" className={classes.link}>
+            <Link color="textPrimary" href="#" className={styles.link}>
               More jobs like this...
             </Link>
             </div>
@@ -65,4 +67,4 @@ function customCard(props) {
     );
 }
 
-export default customCard;
+export default CustomCard;

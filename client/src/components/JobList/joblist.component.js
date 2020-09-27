@@ -2,6 +2,8 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
+import useStyles from './joblist.styles';
+
 import JobSearchBar from '../Jobsearchbar/searchbar.component';
 import Job from '../Job/job.component';
 
@@ -225,15 +227,15 @@ const jobs = [
 ];
 
 
-function JobList(props) {
-  const classes = props.classes;
+function JobList() {
+  const styles = useStyles();
 
   return(
         <Container maxWidth="lg" component="main">
-        <JobSearchBar classes={classes}/>
+        <JobSearchBar />
         <Grid container spacing={5} direction="column">
           {
-          jobs.map((job, index) => (<Job key={index} job={job} classes={classes} />))
+          jobs.map((job, index) => (<Job key={index} job={job} />))
           }
         </Grid>
       </Container>

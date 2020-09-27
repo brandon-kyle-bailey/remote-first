@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box';
 import FooterObject from '../FooterObject/footerobject.component';
 import Copyright from '../Copyright/copyright.component';
 
+import useStyles from './footer.styles';
+
 const footers = [
     {
       title: 'Company',
@@ -26,11 +28,11 @@ const footers = [
   ];
 
 
-function Footer(props) {
-  const classes = props.classes;
+function Footer() {
+  const styles = useStyles();
 
   return(
-      <Container maxWidth="md" component="footer" className={classes.footer}>
+      <Container maxWidth="md" component="footer" className={styles.footer}>
       <Grid container spacing={4} justify="space-evenly">
         {footers.map((footer, index) => (
           <FooterObject key={index} footer={footer}/>

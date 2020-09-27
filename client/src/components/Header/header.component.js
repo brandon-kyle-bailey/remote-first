@@ -4,12 +4,14 @@ import Typography from '@material-ui/core/Typography';
 
 import NavigationBar from '../NavigationBar/navigationbar.component';
 
-function Header(props) {
-  const classes = props.classes;
+import useStyles from './header.styles';
+
+function Header() {
+  const styles = useStyles();
   return(
       <>
-      <NavigationBar classes={classes}/>
-        <Container maxWidth="auto" component="main" className={classes.heroContent}>
+      <NavigationBar />
+        <Container maxWidth="auto" component="main" className={styles.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Remote Jobs
         </Typography>
