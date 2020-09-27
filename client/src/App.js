@@ -5,13 +5,15 @@ import Header from './components/Header/header.component';
 import JobList from './components/JobList/joblist.component';
 import Footer from './components/Footer/footer.component';
 
+import { GlobalProvider } from './context/global-state.context';
+
 export default function App() {
   return (
-    <React.Fragment>
+    <GlobalProvider>
       <CssBaseline />
       <Header />
       <JobList />
       <Footer />
-    </React.Fragment>
+    </GlobalProvider>
   );
 }

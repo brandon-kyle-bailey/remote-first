@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
@@ -8,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
 import useStyles from './job.styles';
+
+import TagList from '../Taglist/taglist.component';
 
 
 function CustomCard(props) {
@@ -38,13 +39,7 @@ function CustomCard(props) {
                 </Typography>
             </div>
             <div id="tag_and_location" className={styles.tagAndLocation}>
-                <Typography component="p" color="textPrimary" className={styles.tagsList}>
-                {job.tags.map((tag) => (
-                <Typography className={styles.tagItem} component="a" variant="subtitle1" align="center" key={tag}>
-                  <Button size="small" variant="outlined" color="primary">{tag}</Button>
-                </Typography>
-              ))}
-                </Typography>
+                <TagList tags={job.tags}/>
                 <Typography component="h6" color="textPrimary">
                     Location: {job.location}
                 </Typography>

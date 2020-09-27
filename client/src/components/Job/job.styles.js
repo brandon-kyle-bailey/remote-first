@@ -1,4 +1,4 @@
-import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     jobCard: {
@@ -37,20 +37,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'stretch',
         [theme.breakpoints.down('sm')]: {
           flexDirection: 'column-reverse',
-        },
-      },
-      tagsList: {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        flexGrow: 1,
-        flexShrink: 1,
-        flexBasis: '50%',
-      },
-      tagItem: {
-        margin: '10px',
-        [theme.breakpoints.down('sm')]: {
-          margin: '5px',
         },
       },
       jobApplyAction: {

@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import SearchBar from "material-ui-search-bar";
+
+import { GlobalContext } from '../../context/global-state.context';
 
 import useStyles from './searchbar.styles';
 
@@ -7,9 +9,11 @@ import useStyles from './searchbar.styles';
 function JobSearchBar() {
     const styles = useStyles();
     const [searchTerm, setSearchTerm] = useState("");
+    
+    const {searchJobs} = useContext(GlobalContext);
 
-    const performJobSearch = (input) => {
-        alert(`Performing search for: ${input}`);
+    const doJobSearch = () => {
+        searchJobs(searchTerm);
     }
 
     return(
@@ -17,7 +21,7 @@ function JobSearchBar() {
             className={styles.searchBar} 
             value={searchTerm}
             onChange={(newValue) => setSearchTerm(newValue)}
-            onRequestSearch={() => performJobSearch(searchTerm)}/>
+            onRequestSearch={doJobSearch}/>
     );
 }
 
