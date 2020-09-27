@@ -16,7 +16,7 @@ function Header() {
           Remote Jobs
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
-          A job board designed <b>by</b> remote workers <b>for</b> remote workers.
+          A job platform designed <b>by</b> remote workers <b>for</b> remote workers.
         </Typography>
       </Container>
     </>
