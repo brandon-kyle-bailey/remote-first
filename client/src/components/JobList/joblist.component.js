@@ -6,13 +6,11 @@ import Typography from '@material-ui/core/Typography';
 
 import { GlobalContext } from '../../context/global-state.context';
 
-import useStyles from './joblist.styles';
 
 import JobSearchBar from '../Jobsearchbar/searchbar.component';
 import Job from '../Job/job.component';
 
 function JobList() {
-  const styles = useStyles();
   const { jobs } = useContext(GlobalContext);
 
   console.log(jobs);

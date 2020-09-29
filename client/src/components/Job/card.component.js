@@ -19,7 +19,7 @@ function CustomCard(props) {
     return(
         <Card className={styles.jobCard}>
             <div className={styles.imageWrapper}>
-                <img src={job.imgUrl} className={styles.image}/>
+                <img src={job.imgUrl} className={styles.image} alt=""/>
             </div>
         <CardContent className={styles.jobCardBody}>
             <div id="position_and_company" className={styles.positionAndCompany}>
