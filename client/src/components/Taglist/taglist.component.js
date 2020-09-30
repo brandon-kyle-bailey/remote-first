@@ -12,7 +12,7 @@ function TagList(props) {
 
     return(
         <Typography component="p" color="textPrimary" className={styles.tagsList}>
-        {tags.map((tag) => (<Tag tag={tag} />))}
+        {tags.map((tag, index) => (<Tag key={index} tag={tag} />))}
         </Typography>
         );
 }

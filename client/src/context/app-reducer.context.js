@@ -15,6 +15,11 @@ export default (state, action) => {
           ...state,
           jobs: state.jobs.filter((job) => containsTerms(action.payload.replace(/[^\w\s]/gi, '').split(' '), job))
         }
+        case 'INIT_JOBS':
+          return {
+            ...state,
+            jobs: action.payload
+          }
       default:
         return state;
     }

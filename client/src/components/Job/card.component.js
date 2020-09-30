@@ -47,7 +47,7 @@ function CustomCard(props) {
         </CardContent>
         <CardActions className={styles.jobApplyAction}>
             <div className={styles.jobApplyAction}>
-            <Typography component="p" variant="subtitle2" color="textPrimary" align="center" gutterBottom="1">
+            <Typography component="p" variant="subtitle2" color="textPrimary" align="center">
                 {daysOld}d Ago
             </Typography>
             <Button fullWidth color="primary" size="large" variant="outlined">

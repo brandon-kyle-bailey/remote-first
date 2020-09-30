@@ -13,18 +13,14 @@ import Job from '../Job/job.component';
 function JobList() {
   const { jobs } = useContext(GlobalContext);
 
-  console.log(jobs);
-
   return(
         <Container maxWidth="lg" component="main">
           <JobSearchBar />
-          <Typography component="h2" variant="h4" color="textPrimary" gutterBottom="1">
+          <Typography component="h2" variant="h4" color="textPrimary">
             Today's Remote Jobs
           </Typography>
           <Grid container spacing={5} direction="column">
-            {
-            jobs.map((job, index) => (<Job key={index} job={job} />))
-            }
+            {jobs.map((job, index) => (<Job key={index} job={job} />))}
           </Grid>
       </Container>
     );

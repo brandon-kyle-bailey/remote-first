@@ -11,7 +11,7 @@ function Header() {
   return(
       <>
       <NavigationBar />
-        <Container maxWidth="auto" component="main" className={styles.heroContent}>
+        <Container component="main" className={styles.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Remote Jobs
         </Typography>
