@@ -1,0 +1,29 @@
+[
+    {
+        "imgUrl": "https://www.vectorico.com/download/social_media/Facebook-Icon.jpg",
+        "position": "Junior React Developer",
+        "company": "Facebook",
+        "description": "Labore amet magna ut laborum qui. Officia Lorem ad nostrud est cupidatat veniam incididunt quis nisi aliqua commodo. Exercitation adipisicing non officia Lorem exercitation eu ut. Adipisicing cillum elit ipsum eiusmod ex aliquip veniam. Sint quis esse aliquip sunt adipisicing consequat ad quis dolore fugiat amet est occaecat.",
+        "salary": 50000,
+        "tags": ["facebook", "software", "frontend", "remote", "react"],
+        "location": "remote"
+    },
+    {
+        "imgUrl": "https://listimg.pinclipart.com/picdir/s/33-337332_jpg-royalty-free-library-black-free-on-dumielauxepices.png",
+        "position": "Devops Engineer",
+        "company": "Instagram",
+        "description": "Labore amet magna ut laborum qui. Officia Lorem ad nostrud est cupidatat veniam incididunt quis nisi aliqua commodo. Exercitation adipisicing non officia Lorem exercitation eu ut. Adipisicing cillum elit ipsum eiusmod ex aliquip veniam. Sint quis esse aliquip sunt adipisicing consequat ad quis dolore fugiat amet est occaecat.",
+        "salary": 120000,
+        "tags": ["instagram", "devops", "remote", "aws"],
+        "location": "remote"
+    },
+    {
+        "imgUrl": "https://cdn.vox-cdn.com/thumbor/hSP3rKWFHC7hbbtpCp_DIKiRSDI=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/2937002/twitch.0.jpg",
+        "position": "Database Administrator",
+        "company": "Twitch",
+        "description": "Labore amet magna ut laborum qui. Officia Lorem ad nostrud est cupidatat veniam incididunt quis nisi aliqua commodo. Exercitation adipisicing non officia Lorem exercitation eu ut. Adipisicing cillum elit ipsum eiusmod ex aliquip veniam. Sint quis esse aliquip sunt adipisicing consequat ad quis dolore fugiat amet est occaecat.",
+        "salary": 80000,
+        "tags": ["twitch", "database", "remote", "mysql", "software"],
+        "location": "remote"
+    }
+]

@@ -14,7 +14,7 @@ import TagList from '../Taglist/taglist.component';
 function CustomCard(props) {
     const job = props.job;
     const styles = useStyles();
-    const daysOld = Math.floor((new Date().getTime() - new Date(job.creationTime).getTime()) / (1000 * 3600 * 24));
+    const daysOld = Math.floor((new Date().getTime() - new Date(job.createdAt).getTime()) / (1000 * 3600 * 24));
 
     return(
         <Card className={styles.jobCard}>

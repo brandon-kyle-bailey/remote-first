@@ -14,25 +14,29 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  useEffect(() => {
-    fetch('/api/v1/jobs/all')
+  const getAllJobs = (callback, payloadeType) => {
+    fetch('/api/v1/jobs/get/all')
     .then(res => res.json())
     .then(data => {
-      dispatch({
-        type: 'INIT_JOBS',
+      callback({
+        type: payloadeType,
         payload: data
       })
-  }).catch(err => console.log(err));
+    }).catch(err => console.log(err));    
+  }
+
+  useEffect(() => {
+    getAllJobs(dispatch, 'INIT_JOBS');
   }, []);
 
 
   // Actions
   function searchJobs(searchTerm) {
-    dispatch({
-        type:'SEARCH_JOBS',
-        payload: searchTerm
-      }
-    )
+    if(!searchTerm) {
+      getAllJobs(dispatch, 'INIT_JOBS');
+    } else {
+      dispatch({type:'SEARCH_JOBS',payload: searchTerm})
+    }
   }
 
   return (<GlobalContext.Provider 

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       descriptionAndSalary: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'stretch',
+        justifyContent: 'space-between',
         [theme.breakpoints.down('sm')]: {
           flexDirection: 'column-reverse',
           justifyContent: 'flex-start',

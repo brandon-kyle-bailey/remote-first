@@ -5,22 +5,30 @@ const validateMiddleware = require('../middleware/validate.middleware');
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
-routes.get("/all", 
+routes.get("/get/all", 
             authMiddleware.hasJobApiPrivileges, 
-            controller.getAllJobs);
+            controller.getMethods.getJobs);
 
-routes.post("/create", 
+routes.get("/get/:id", 
+            authMiddleware.hasJobApiPrivileges, 
+            controller.getMethods.getJob);
+
+routes.post("/post/one", 
             authMiddleware.hasJobApiPrivileges,
             validateMiddleware.validateCreateJobForm,
-            controller.createJob);
+            controller.postMethods.postJob);
 
-routes.post("/ingest", 
+routes.post("/post/all", 
             authMiddleware.hasJobApiPrivileges,
             upload.single('uploaded_file'), // this needs to be cleaner
-            controller.createMultipleJobs);
+            controller.postMethods.postJobs);
 
-routes.put("/update/:id", 
+routes.put("/put/:id", 
             validateMiddleware.validateJobId,
-            controller.updateJob);
+            controller.putMethods.putJob);
+
+routes.delete("/delete/:id", 
+            validateMiddleware.validateJobId,
+            controller.deleteMethods.deleteJob);
 
 module.exports = routes;

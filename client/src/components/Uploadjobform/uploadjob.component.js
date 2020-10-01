@@ -11,13 +11,12 @@ function UploadJobForm() {
 
     return (
         
-        <form action="/api/v1/jobs/ingest" enctype="multipart/form-data" method="post">
+        <form action="/api/v1/jobs/post/all" enctype="multipart/form-data" method="post">
             <div class="form-group">
                 <input type="file" class="form-control-file" name="uploaded_file"/>
                 <input type="submit" value="Get me the stats!" class="btn btn-default"/>
             </div>
         </form>
-
 
         // <Typography variant="subtitle1" color="textSecondary" align="center">
         //     <Typography variant="h5" color="textSecondary" align="center" gutterBottom paragraph>
